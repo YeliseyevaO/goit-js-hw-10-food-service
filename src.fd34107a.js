@@ -9,4 +9,4 @@ var e,t=arguments[3];!function(t,r){"object"==typeof exports&&"object"==typeof m
 },{"handlebars/dist/handlebars.runtime":"pAws"}],"Focm":[function(require,module,exports) {
 "use strict";var e=c(require("./menu.json")),t=c(require("./templates.hbs"));function c(e){return e&&e.__esModule?e:{default:e}}const o="light-theme",n="dark-theme";function r(e){return e.map(t.default).join("")}const a=document.querySelector(".menu"),s=r(e.default);a.insertAdjacentHTML("afterbegin",s);const l=document.querySelector("body"),u=document.querySelector(".theme-switch__toggle");function m(){localStorage.getItem("theme")?(u.checked=!0,l.classList.add(n)):l.classList.add(o)}function d(e){!0===u.checked?(localStorage.setItem("theme",n),l.classList.replace(o,n)):(localStorage.removeItem("theme"),l.classList.replace(n,o))}u.onchange=d,m();
 },{"./menu.json":"mA8c","./templates.hbs":"Cvg0"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-11-food-service/src.fd34107a.js.map
+//# sourceMappingURL=/goit-js-hw-10-food-service/src.fd34107a.js.map
